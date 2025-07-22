@@ -6,10 +6,16 @@ body {
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .main-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  /* padding: 0 1rem; */
 }
 
 section {
@@ -22,6 +28,13 @@ section {
 }
 
 .hero {
+  width: 100vw !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow-x: hidden;
   background: linear-gradient(90deg, #e0e7ef 0%, #f7f8fa 100%);
   text-align: center;
   padding: 3rem 2rem 2.5rem 2rem;
